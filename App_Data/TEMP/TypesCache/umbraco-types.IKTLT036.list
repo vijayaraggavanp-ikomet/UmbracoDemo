@@ -602,3 +602,22 @@ Umbraco.Web.HealthCheck.NotificationMethods.IHealthCheckNotificationMethod
 
 Umbraco.Web.HealthCheck.NotificationMethods.EmailNotificationMethod, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 
+Umbraco.Core.Models.PublishedContent.PublishedElementModel
+
+
+Umbraco.Core.Models.PublishedContent.PublishedContentModel
+
+UmbracoInternal.Models.Article, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Audio, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.File, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Folder, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Image, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.MacroDemoNew, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Member, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Practices_DocType, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.VectorGraphics, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Video, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+Umbraco.Core.Deploy.IServiceConnector
+
+

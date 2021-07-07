@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Web.Models
+@using Umbraco.Core.PropertyEditors.ValueConverters
+@using Umbraco.Core.Logging;
+@{
+    Layout = null;
+    var pageName = Model.Name;
+    var childPages = Model.Children;
+    var Practices = Model.AncestorOrSelf(1).Descendants("practices_ddl").Count();
+    string path = HttpContext.Current.Request.Url.AbsolutePath;
+
+    var careerNode = Model;
+
+    var menuClass = string.Empty;
+    //var content = Model.Value("ContentMain").ToString();
+
+}
+
+@if (Model.HasValue("practices_ddl"))
+{
+    var categories = Model.Value<IEnumerable<string>>("practices_ddl");
+    <ul>
+        @foreach (var category in categories)
+        {
+            <li>@category</li>
+            <li>@category</li>
+        }
+    </ul>
+}
+
+@if (Model.HasValue("ContentMain"))
+{
+    var Content = Model.Value<string>("ContentMain");
+    <div>@Html.Raw(Content)</div>
+    <div>@Content</div>
+}
+
+@if (Model.HasValue("imageCropper"))
+{
+    var foto = Model.Value<string>("imageCropper");
+    var s =  Model.GetCropUrl("imageCropper", "Desktop");
+    
+    if (foto != null)
+    {
+        //<img data-srcset="@Model.GetCropUrl("imageCropper", "internalBannerDesktop")" data-src="@Model.GetCropUrl("imageCropper", "internalBannerTablet")" sizes="auto" class="lazyload" />
+    }
+}
+
